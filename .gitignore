@@ -8,8 +8,5 @@ dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
-<<<<<<< HEAD
 .mvn/wrapper/maven-wrapper.jar
-=======
-.mvn/wrapper/maven-wrapper.jar
->>>>>>> branch 'main' of https://github.com/pvassil/03_StickyNote_SpringBoot
+
