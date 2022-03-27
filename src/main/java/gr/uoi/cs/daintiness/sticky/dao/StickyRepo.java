@@ -24,9 +24,10 @@ public class StickyRepo implements StickyRepoInterface {
 		super();
 		this.notesRepo = new ArrayList<StickyNote>();
 		
-		notesRepo.add(new StickyNote("title 20", "content 20", 20, 20));
-		notesRepo.add(new StickyNote("title 10", "content 10", 10, 10));
-		notesRepo.add(new StickyNote("title 30", "content 30", 30, 30));
+		notesRepo.add(new StickyNote("Run", "There goes the siren", 20, 20));
+		notesRepo.add(new StickyNote("Live to Fly", "that warns of the air raid", 10, 10));
+		notesRepo.add(new StickyNote("Fly to Live", "There comes the sound", 30, 30));
+		notesRepo.add(new StickyNote("Do or Die", "of the guns sending flak", 20, 40));
 	}//end constructor
 	
 	
