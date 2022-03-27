@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
 import gr.uoi.cs.daintiness.sticky.dao.StickyRepoInterface;
 import gr.uoi.cs.daintiness.sticky.model.StickyNote;
@@ -18,10 +18,10 @@ import gr.uoi.cs.daintiness.sticky.model.StickyNote;
  *
  */
 
-@Repository
+@Service
 @Qualifier("StickyService")
 public class StickyService implements StickyServiceInterface {
-	//private List<StickyNote> notesRepo;
+	
 	private StickyRepoInterface stickyRepo;
 	
 	@Autowired

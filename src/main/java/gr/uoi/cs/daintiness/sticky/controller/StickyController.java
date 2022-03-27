@@ -2,6 +2,7 @@ package gr.uoi.cs.daintiness.sticky.controller;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -18,6 +19,7 @@ import gr.uoi.cs.daintiness.sticky.service.StickyServiceInterface;
 public class StickyController {
 	private StickyServiceInterface repoService;
 	
+	@Autowired
 	public StickyController(StickyServiceInterface aRepoService) {
 		this.repoService = aRepoService;
 	}

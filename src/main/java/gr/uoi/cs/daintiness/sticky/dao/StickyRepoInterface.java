@@ -6,12 +6,7 @@ import gr.uoi.cs.daintiness.sticky.model.StickyNote;
 
 public interface StickyRepoInterface {
 
-	/**
-	 * Defensive programming: does not allow access to the internal attribute
-	 * but returns a copy, with the items in it
-	 * 
-	 * @return a List<StickyNote> with the items of the notesRepo
-	 */
+
 	List<StickyNote> getAllStickyNotes();
 
 	StickyNote getStickyByTitle(String aTitle);

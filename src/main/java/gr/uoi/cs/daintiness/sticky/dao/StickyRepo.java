@@ -77,22 +77,6 @@ public class StickyRepo implements StickyRepoInterface {
 		return false;
 	}
 	
-//	public boolean delSticky(String title) {
-//		int position = -1;
-//		String cleanTitle = title.trim();
-//		for(StickyNote iter: this.notesRepo) {
-//			//System.out.println(iter.getTitle() + " : " + cleanTitle);
-//			if(iter.getTitle().trim().equals(cleanTitle)) {
-//				position = this.notesRepo.indexOf(iter);
-//				System.out.println("\n\n %%% " + iter.getTitle() + " " + this.notesRepo.size() + "\n %%%\n\n");
-//				break;
-//			}
-//		}			
-//		if(position != -1 ) {
-//			StickyNote note= this.notesRepo.remove(position);
-//			if (note != null) return true;
-//		}
-//		return false;
-//	}
+
 	
 }//end class
