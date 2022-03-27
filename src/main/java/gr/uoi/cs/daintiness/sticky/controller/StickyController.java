@@ -24,7 +24,7 @@ public class StickyController {
 	
 	@RequestMapping(value = "/listMaxUrgency")
 	@ResponseBody
-	public String naiveResponseBody() {
+	public String showMostUrgent() {
 		String urgentTitle = repoService.showMostUrgentSticky();
 		return "<p>Max urgent: " + urgentTitle + "</p>";
 	}
@@ -38,14 +38,14 @@ public class StickyController {
 	}
 
 	@RequestMapping(value = "/add_sticky")
-	public ModelAndView addSticky(ModelMap model) {
+	public ModelAndView gotoAddSticky(ModelMap model) {
 		StickyNote sticky = new StickyNote("","",0,0);
 		model.addAttribute("obj", sticky);
 		return new ModelAndView("add_sticky", model);
 	}
 
 	@PostMapping("/save")
-	public String saveSticky(@ModelAttribute("obj") StickyNote newSticky) {
+	public String addSticky(@ModelAttribute("obj") StickyNote newSticky) {
 		this.repoService.addNewStickyNote(newSticky);
 		return "redirect:/index.html";
 	}
